@@ -101,9 +101,9 @@ module CS
     # save to states.us and cities.us
     states_fn = File.join(FILES_FOLDER, "states.#{country.downcase}")
     cities_fn = File.join(FILES_FOLDER, "cities.#{country.downcase}")
-    File.open(states_fn, "w") { |f| f.write states.to_yaml }
-    File.open(cities_fn, "w") { |f| f.write cities.to_yaml }
-    File.chmod(0666, states_fn, cities_fn) # force permissions to rw_rw_rw_ (issue #3)
+    #File.open(states_fn, "w") { |f| f.write states.to_yaml }
+    #File.open(cities_fn, "w") { |f| f.write cities.to_yaml }
+    #File.chmod(0666, states_fn, cities_fn) # force permissions to rw_rw_rw_ (issue #3)
     true
   end
 
